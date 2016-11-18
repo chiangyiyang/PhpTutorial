@@ -6,15 +6,14 @@ if (isset($_GET["cID"])) {
 
     $sql = "DELETE FROM `students` WHERE `cID`='" . $_GET["cID"] . "'";
 
-    echo $_GET["cID"]."<BR>";
-    echo $sql."<BR>";
-
+//    echo $_GET["cID"]."<BR>";
+//    echo $sql."<BR>";
 
     mysqli_query($conn, $sql);
-
     mysqli_close($conn);
-    echo "True";
+
+    echo '["True"]';
 } else
-    echo "False"
+    echo '["False"]';
 
 ?>
