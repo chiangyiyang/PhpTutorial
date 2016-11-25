@@ -1,7 +1,7 @@
 <?php
 
-if(isset($_GET["cName"]) && isset($_GET["cSex"]) && isset($_GET["cBirthday"])
-    && isset($_GET["cEmail"]) && isset($_GET["cPhone"]) && isset($_GET["cAddr"])){
+if(isset($_POST["cName"]) && isset($_POST["cSex"]) && isset($_POST["cBirthday"])
+    && isset($_POST["cEmail"]) && isset($_POST["cPhone"]) && isset($_POST["cAddr"])){
 
     require_once '../connMysql.php';
 

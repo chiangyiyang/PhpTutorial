@@ -12,8 +12,8 @@ if (isset($_GET["cID"])) {
     mysqli_query($conn, $sql);
     mysqli_close($conn);
 
-    echo '["True"]';
+    echo "True";
 } else
-    echo '["False"]';
+    echo "False";
 
 ?>
